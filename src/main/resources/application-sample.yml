@@ -1,0 +1,15 @@
+server:
+  #Spring Boot Applicaiton Port
+  port: 8081
+
+aws:
+  dynamodb:
+    #Endpoint that application might connect to
+    endpoint: https://dynamodb.<your-region>.amazonaws.com
+  # Access credentials for the aws programmatic access. Please make sure that you donot share this information with others or commit
+  # it to public.
+  access:
+    key: <User Access Key>
+    secret-key: <User Secret Key>
+  # your AWS region where dynamo db instance is located.
+  region: <AWS region eg. us-east-2>
